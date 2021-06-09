@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
         this.username = newValue;
     }
 
-// Implementing the Menu in Main Activity
+    // Implementing the Menu in Main Activity
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.

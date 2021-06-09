@@ -35,7 +35,7 @@ public class Question1Fragment extends Fragment implements IQuestion1View {
     RadioButton radioButtonQ3;
     RadioButton radioButtonQ4;
     String answer1;
-TextView textViewtv;
+    TextView textViewtv;
     TextView textViewQuestion1;
 
     public static final String MyPREFERENCES = "MyPrefs" ;
@@ -48,8 +48,8 @@ TextView textViewtv;
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_question1_fragments, container, false);
         radioGroup = (RadioGroup) view.findViewById(R.id.answer_radiogroup);
-textViewtv=(TextView)view.findViewById(R.id.tv);
-textViewQuestion1=(TextView)view.findViewById(R.id.question1_textview) ;
+        textViewtv=(TextView)view.findViewById(R.id.tv);
+        textViewQuestion1=(TextView)view.findViewById(R.id.question1_textview) ;
 
 
         buttonQ1 = (Button) view.findViewById(R.id.q1_next_button);
@@ -88,8 +88,8 @@ textViewQuestion1=(TextView)view.findViewById(R.id.question1_textview) ;
                 Toast.makeText(getActivity(), answer1+"", Toast.LENGTH_SHORT).show();
                 SharedPreferences pref = getActivity().getPreferences(Context.MODE_PRIVATE);
                 SharedPreferences.Editor edt = pref.edit();
-                edt.putString("facebook_id", answer1);
-                edt.commit();
+                edt.putString("players", answer1);
+                edt.apply();
 
 
             }

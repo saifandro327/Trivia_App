@@ -31,7 +31,7 @@ public class SummaryFragment extends Fragment {
 
     String stringGetName, stringAnswer1;
     TextView textViewSummarytName, textViewSummaryAnswer1, textViewSummaryAnswer2;
-Button buttonFinish;
+    Button buttonFinish;
 
     String currentDateTimeString;    @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -43,7 +43,7 @@ Button buttonFinish;
         textViewSummarytName = (TextView) view.findViewById(R.id.summary_name_textview);
         textViewSummaryAnswer1 = (TextView) view.findViewById(R.id.summary_answer1_textview);
         textViewSummaryAnswer2 = (TextView) view.findViewById(R.id.summary_answer2_textview);
-buttonFinish=(Button)view.findViewById(R.id.fiinsh);
+        buttonFinish=(Button)view.findViewById(R.id.fiinsh);
 
 
 
@@ -53,7 +53,7 @@ buttonFinish=(Button)view.findViewById(R.id.fiinsh);
 
         textViewSummarytName.setText(stringGetName);
         SharedPreferences pref = this.getActivity().getPreferences(Context.MODE_PRIVATE);
-        String id = pref.getString("facebook_id", "empty");
+        String id = pref.getString("players", "empty");
         Toast.makeText(getContext(), id, Toast.LENGTH_SHORT).show();
         textViewSummaryAnswer1.setText(id);
 
@@ -82,12 +82,11 @@ buttonFinish=(Button)view.findViewById(R.id.fiinsh);
                 // course to sqlite data and pass all our values to it.
 
                 // after adding the data we are displaying a toast message.
-                Toast.makeText(getActivity(), "Saeved", Toast.LENGTH_SHORT).show();
-                ;
-               pref.edit().clear().apply();
-               prefflag.edit().clear().apply();
+                Toast.makeText(getActivity(), "Saved", Toast.LENGTH_SHORT).show();
 
-               MainActivity.viewPager.setCurrentItem(0);
+
+
+                MainActivity.viewPager.setCurrentItem(0);
 
 
             }
