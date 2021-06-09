@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".view.Question2Fragment">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:textStyle="italic|bold"
+        android:text="What are the Colours in Indian Flag"
+        android:id="@+id/question2_textview"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:id="@+id/linearlayout"
+        android:orientation="vertical">
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="White"
+        android:buttonTint="@color/purple_500"
+
+        android:id="@+id/checkbox1"/>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yellow"
+        android:buttonTint="@color/purple_500"
+
+        android:id="@+id/checkbox2"/>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Orange"
+        android:buttonTint="@color/purple_500"
+
+        android:id="@+id/checkbox3"/>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Green"
+        android:buttonTint="@color/purple_500"
+
+        android:id="@+id/checkbox4"/>
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/q2_next_btn"
+        android:layout_margin="10dp"
+        android:background="@drawable/button_bg"
+        android:textColor="@color/white"
+        android:text="next"/>
+
+
+</LinearLayout>

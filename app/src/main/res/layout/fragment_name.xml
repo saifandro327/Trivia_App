@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center_vertical"
+    android:gravity="center_horizontal"
+    android:layout_marginTop="15dp"
+    android:padding="10dp"
+    android:layout_height="match_parent"
+    tools:context=".view.NameFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter Your Name"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/edittext_bg"
+        android:id="@+id/name_edittext"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="next"
+        android:paddingTop="5dp"
+        android:background="@drawable/button_bg"
+        android:textColor="@color/white"
+        android:id="@+id/nextbutton"/>
+
+</LinearLayout>

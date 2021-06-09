@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_height="match_parent"
+    tools:context=".view.SummaryFragment">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/summary_name_ll"
+        android:padding="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="Hello  "/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+
+            android:textSize="18dp"
+            android:id="@+id/summary_name_textview"/>
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/selected_answer_tv"
+        android:textColor="@color/black"
+android:textSize="16dp"
+        android:layout_below="@+id/summary_name_ll"
+        android:text="Here are the Answers Selected"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+
+        android:text="Who is the Best Cricketer in the World?"
+        android:layout_below="@+id/selected_answer_tv"
+        android:id="@+id/summary_q1_textview"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Answer : "
+        android:textSize="16dp"
+
+        android:textColor="@color/black"
+
+        android:layout_below="@id/summary_q1_textview"
+        android:id="@+id/answer1_tv"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+
+        android:layout_below="@id/summary_q1_textview"
+        android:layout_toEndOf= "@id/answer1_tv"
+        android:id="@+id/summary_answer1_textview"
+        android:text="VK"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/summary_q2_textview"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+
+        android:layout_below="@+id/answer1_tv"
+        android:text="What are the Colours in National flag?"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Answers : "
+        android:textColor="@color/black"
+        android:textSize="16dp"
+
+        android:layout_below="@id/summary_q2_textview"
+        android:id="@+id/answer2_tv"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+
+        android:layout_below="@id/summary_q2_textview"
+        android:layout_toEndOf= "@id/answer2_tv"
+        android:id="@+id/summary_answer2_textview"
+        android:text="green,white"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fiinsh"
+
+        android:background="@drawable/button_bg"
+        android:textColor="@color/white"
+        android:layout_margin="10dp"
+        android:layout_below="@id/summary_answer2_textview"
+        android:text="Finish"/>
+
+
+
+
+
+</RelativeLayout>

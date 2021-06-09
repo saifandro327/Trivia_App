@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".view.Question1Fragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_margin="10dp"
+        android:id="@+id/question1_textview"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:textStyle="italic|bold"
+        android:text="Who is the best Cricketer in the World?"/>
+
+    <RadioGroup
+        android:id="@+id/answer_radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtview_ques"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp">
+        <RadioButton
+            android:id="@+id/option1"
+            android:layout_width="match_parent"
+            android:buttonTint="@color/purple_500"
+
+            android:layout_height="wrap_content"
+            android:text="Sachin Tendulkar"
+        />
+        <RadioButton
+            android:id="@+id/option2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/purple_500"
+
+            android:text="Virat Kohli"
+            android:layout_marginTop="5dp"/>
+        <RadioButton
+            android:id="@+id/option3"
+            android:layout_width="match_parent"
+            android:buttonTint="@color/purple_500"
+
+            android:layout_height="wrap_content"
+            android:text="Adam Gilchrist"
+            android:layout_marginTop="5dp"/>
+        <RadioButton
+            android:id="@+id/option4"
+            android:layout_width="match_parent"
+            android:buttonTint="@color/purple_500"
+
+            android:layout_height="wrap_content"
+            android:text="Jacques Kallis"
+            android:layout_marginTop="5dp"/>
+    </RadioGroup>
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="NEXT"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/button_bg"
+android:textColor="@color/white"
+    android:id="@+id/q1_next_button"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv"/>
+
+</LinearLayout>
